@@ -10,6 +10,12 @@ import './assets/css/global.css'
 Vue.use(ElementUI);
 // 配置请求的根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+// 请求拦截器
+axios.interceptors.request.use(config => {
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
+
 // 挂载到 vue 原型上,使得每个组件均可通过 this 访问 $http 发起ajax请求
 Vue.prototype.$http = axios;
 Vue.config.productionTip = false
