@@ -6,8 +6,11 @@ import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
 // 导入全局样式表
 import './assets/css/global.css'
+// 导入树形表格
+import ZkTable from 'vue-table-with-tree-grid'
 
 Vue.use(ElementUI);
+Vue.use(ZkTable);
 // 配置请求的根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 // 请求拦截器

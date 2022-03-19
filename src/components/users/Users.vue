@@ -224,6 +224,7 @@ export default {
     return {
       // 获取用户列表的参数对象
       queryInfor: {
+        // 搜索框中填入的内容
         query: "",
         pagenum: 1,
         // 当前每页显示多少条数据
