@@ -92,6 +92,7 @@
             @change="parentCateChanged"
             clearable
             change-on-select
+            style="width: 100%"
           ></el-cascader>
         </el-form-item>
       </el-form>
@@ -261,11 +262,8 @@ export default {
 };
 </script>
 
-<style lang="less" scope>
+<style lang="less" scoped>
 .zk-table {
   margin: 15px 0;
-}
-.el-cascader {
-  width: 100%;
 }
 </style>
