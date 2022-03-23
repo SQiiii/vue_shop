@@ -41,7 +41,7 @@ Vue.filter('dateFormat', function (val) {
 
   const hh = time.getHours() >= 10 ? time.getHours() : "0" + time.getHours();
   const mm =
-    time.getMinutes() >= 10 ? time.getMinutes() : "0" + time.getMinutes;
+    time.getMinutes() >= 10 ? time.getMinutes() : "0" + time.getMinutes();
   const ss = (time.getSeconds() + '').padStart(2, '0')
   return `${year}-${month}-${day} ${hh}:${mm}:${ss}`;
 })
